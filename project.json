@@ -1,0 +1,55 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : false,
+    "frameRate" : 60,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d","extensions","external"],
+
+    "jsList" : [
+        "src/resource.js",
+
+        "src/util/scene_manager.js",
+        "src/util/size.js",
+        "src/util/gameData.js",
+        "src/util/gameEvent.js",
+        "src/util/itemBlock.js",
+        "src/util/radiusRect.js",
+        "src/util/scrollListBox.js",
+
+        "src/start/welcome.js",
+        "src/start/update.js",
+        "src/start/login.js",
+        "src/start/register.js",
+
+        "src/scene/header.js",
+        "src/scene/city.js",
+        "src/scene/map.js",
+        "src/scene/pvp.js",
+
+        "src/hero/fullSize.js",
+        "src/hero/headIcon.js",
+        "src/hero/listBox.js",
+        "src/hero/infoView.js",
+
+        "src/station/station.js",
+        "src/station/stationMenu.js",
+        "src/station/stationItem.js",
+        "src/station/stationFormation.js",
+        "src/station/stationHero.js",
+        "src/station/stationStore.js",
+
+        "src/club/mercenary.js",
+        "src/club/magic.js",
+        "src/club/drunkery.js",
+
+        "src/shop/weapon.js",
+        "src/shop/items.js",
+        "src/shop/auction.js",
+        "src/shop/mystery.js"
+    ]
+}

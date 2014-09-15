@@ -1,0 +1,15 @@
+{
+	"packageUrl" : "http://192.168.1.103:8080/project-js/Ranger/assets/",
+	"remoteManifestUrl" : "http://192.168.1.103:8080/project-js/Ranger/assets/project.manifest",
+	"remoteVersionUrl" : "http://192.168.1.103:8080/project-js/Ranger/assets/version.manifest",
+	"version" : "1.0.0",
+	"engineVersion" : "Cocos2d-JS v3.0 RC0",
+
+	"assets" : {
+		"res/images/welcome/bg.jpg" : { "md5" : "1.0.0" }
+	},
+
+    "searchPaths" : [
+        "res/"
+    ]
+}
