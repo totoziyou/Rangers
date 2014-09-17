@@ -8,6 +8,7 @@ var Fn={
 
 var xLayer={};
 var xScene={};
+var xUnit={};
 
 var manager={
     currentScene:null,

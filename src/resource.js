@@ -50,7 +50,8 @@ var res = {
         mysteryShop:"res/images/npc/npc-mysteryShop.png"
     },
     map:{
-        bg: "res/images/map/bg.jpg"
+        bg: "res/images/map/bg.jpg",
+        bg_sideWorldMap: "res/images/map/bg_worldMap.png"
     },
     station:{
         bg: "res/images/station/bg.jpg",
@@ -150,7 +151,9 @@ var g_resources = [
     res.npc.itemShop,
     res.npc.mysteryShop,
 
+    //map
     res.map.bg,
+    res.map.bg_sideWorldMap,
 
     //station 营地
     res.station.bg,

@@ -17,6 +17,8 @@
         "src/util/size.js",
         "src/util/gameData.js",
         "src/util/gameEvent.js",
+        "src/util/util.js",
+        "src/util/create.js",
         "src/util/itemBlock.js",
         "src/util/radiusRect.js",
         "src/util/scrollListBox.js",
@@ -28,8 +30,10 @@
 
         "src/scene/header.js",
         "src/scene/city.js",
-        "src/scene/map.js",
         "src/scene/pvp.js",
+
+        "src/map/map.js",
+        "src/map/mapSide.js",
 
         "src/hero/fullSize.js",
         "src/hero/headIcon.js",

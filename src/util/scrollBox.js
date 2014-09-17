@@ -1,16 +1,8 @@
 
-var ScrollListBox = cc.Node.extend({
-    //item对象的数组
-    _items:null,
-    //item的大小
-    _itemSize:null,
-    //item之间的间距
-    _itemMargin:0,
+var ScrollBox = cc.Node.extend({
     //容器的大小
     _scrollSize:null,
     _startPos:null,
-    //显示item的列数
-    _colNum:null,
     //滚动的高度
     _scrollTop:0,
     //列表的最大高度
@@ -119,46 +111,5 @@ var ScrollListBox = cc.Node.extend({
     //滚动
     onScroll:function(){
         this.listNode.attr({y:this._scrollSize.height+this._scrollTop});
-    },
-    onClickItem:function(index){
-        var item=this._items[index];
-        gameEvent.emit(this,"ClickItem",{item:item});
-    },
-    //重新刷新部分或全部items的位置
-    reLocationItem:function(index){
-        var i,item,len=this._items.length;
-        for(i=0;i<len;i++){
-            item=this._items[i];
-            item.attr({y:item.startPos.y+this._scrollTop});
-        }
-    },
-    //插入一个item
-    insertItem:function(item,index){
-
-    },
-    //删除一个item
-    delItem:function(item){
-
-    },
-    //加入一个item
-    pushItem:function(item){
-        this._items.push(item);
-        var x,y,maxTop,
-            n=this._colNum,
-            mg=this._itemMargin,
-            bw=this._itemSize.width+2*mg,
-            bh=this._itemSize.height+2*mg,
-            index=this._items.length-1;
-        x=(index%n)*bw;
-        y=parseInt(index/n)*bh;
-        //item.startPos={x:this._startPos.x+x,y:this._startPos.y-y};
-        item.startPos={x:x,y:-y};
-        item.attr(item.startPos);
-        this.listNode.addChild(item,1);
-
-        this._maxHeight=y+200;
-
-        maxTop=y+200-this._scrollSize.height;
-        this._maxScrollTop=maxTop>0?maxTop:0;
     }
 });

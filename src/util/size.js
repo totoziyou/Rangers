@@ -59,5 +59,9 @@ var appSize={
         }
         if(x!=undefined) node.x=x;
         if(y!=undefined) node.y=y;
+    },
+    //坐标转换
+    coords:function(){
+
     }
 };

@@ -11,7 +11,7 @@ cc.game.onStart = function(){
         appSize.getRate();
 
         //sc=new WelcomeScene();
-        sc=new CityScene();
+        sc=new MapScene();
         cc.director.runScene(sc);
         manager.currentScene=sc;
 
