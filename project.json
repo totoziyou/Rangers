@@ -16,6 +16,7 @@
         "src/util/scene_manager.js",
         "src/util/size.js",
         "src/util/gameData.js",
+        "src/util/userData.js",
         "src/util/gameEvent.js",
         "src/util/util.js",
         "src/util/create.js",

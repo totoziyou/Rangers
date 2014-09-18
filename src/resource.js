@@ -51,7 +51,8 @@ var res = {
     },
     map:{
         bg: "res/images/map/bg.jpg",
-        bg_sideWorldMap: "res/images/map/bg_worldMap.png"
+        bg_sideWorldMap: "res/images/map/bg_worldMap.png",
+        nationIcon: "res/images/map/nationIcon.png"
     },
     station:{
         bg: "res/images/station/bg.jpg",
@@ -154,6 +155,7 @@ var g_resources = [
     //map
     res.map.bg,
     res.map.bg_sideWorldMap,
+    res.map.nationIcon,
 
     //station 营地
     res.station.bg,

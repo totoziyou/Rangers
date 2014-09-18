@@ -28,17 +28,13 @@ xUnit.MapSideWorld=cc.Node.extend({
         if(w && h) this.setContentSize(cc.size(w,h));
 
         this.title=xCreate.label({
-            text:"世界地图",
-            width:550,
-            height:40,
-            color:"#000000",
-            attr:{y:-20,anchorX:0,anchorY:1},
-            owner:this,
-            index:1
+            text:"世界地图",width:550,height:40,color:"#000000",
+            attr:{y:-30,anchorX:0,anchorY:1},
+            placeAt:{owner:this,index:1}
         });
 
         this.world=cc.Sprite.create(res.map.bg_sideWorldMap);
-        this.world.attr({x:550/2,y:-93,anchorY:1});
+        this.world.attr({x:550/2,y:-88,anchorY:1});
         this.addChild(this.world,0);
 
 
@@ -52,11 +48,28 @@ xUnit.MapSideNation= cc.Node.extend({
 
         if(w && h) this.setContentSize(cc.size(w,h));
 
+        var nation=userData.map.now.nation;
+
         this.bg= new cc.LayerColor(cc.color(175,138,43),550,230);
         this.bg.attr({y:-230});
         this.addChild(this.bg,1);
 
+        this.nationIcon=xCreate.sprite({
+            res:res.map.nationIcon,
+            attr:{x:550/2,y:-16,anchorY:1},
+            placeAt:{owner:this,index:1}
+        });
+
+        this.nationName=xCreate.label({
+            text:mapData.nation[nation].name,fontSize:40,width:550,height:40,color:"#FFFFFF",
+            attr:{y:-210,anchorX:0,anchorY:0},
+            placeAt:{owner:this,index:1}
+        });
+
         return true;
+    },
+    update:function(){
+
     }
 });
 //国家地区选择部分
